@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+/* declaration des variables des polices */
+@font-face {
+    font-family: 'outfit';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'young';
+    src: url(../fonts/young-serif/YoungSerif-Regular.ttf) format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* styles generaux au corps du texte */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* styles specifiques à chaque boites */
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+/* les styles de l'image */
+.picture-area img {
+    width: 100%;
+}
+
+/* les styles propres à chaque bloc ou div */
+.advice-area {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 0px;
+}
+
+.advice-area h1 {
+    font-family: young, serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: hsl(24, 5%, 18%);
+}
+
+.advice-area p {
+    font-family: young, serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.preparation-area {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: hsl(330, 100%, 98%);
+    margin: auto 2rem;
+    border-radius: 5%;
+    padding: 0rem 1rem;
+}
+
+.preparation-area h3 {
+    font-family: outfit, serif;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    font-size: x-large;
+}
+
+.preparation-area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1px;
+}
+
+.preparation-area ul li {
+    font-family: outfit, serif;
+    font-weight: 400;
+    font-size: larger;
+    color: hsl(30, 10%, 34%);
+    padding: 1rem;
+}
+
+.preparation-area ul li span {
+    font-weight: 700;
+}
+
+.ingredients-area {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    gap: 0px;
+    border-bottom: solid hsl(30, 10%, 34%) 1px;
+    margin: auto 2rem;
+}
+
+.ingredients-area h2 {
+    font-family: young, serif;
+    font-size: 2rem;
+    color: hsl(14, 45%, 36%);
+
+}
+
+.ingredients-area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1px;
+}
+
+.ingredients-area ul li {
+    font-family: outfit, serif;
+    font-weight: 400;
+    font-size: larger;
+    color: hsl(30, 10%, 34%);
+    text-indent: 1rem;
+}
+
+.instruction-area {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    gap: 0px;
+    border-bottom: solid hsl(30, 10%, 34%) 1px;
+    margin: auto 2rem;
+}
+
+.instruction-area h2 {
+    font-family: young, serif;
+    font-size: 2rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.instruction-area ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1px;
+}
+
+.instruction-area ol li {
+    font-family: outfit, serif;
+    font-weight: 400;
+    font-size: larger;
+    color: hsl(30, 10%, 34%);
+}
+
+.instruction-area ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.instruction-area ol li span {
+    font-weight: 700;
+}
+
+.nutrition-value {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    gap: 0px;
+    margin: auto 2rem;
+}
+
+.nutrition-value h2 {
+    font-family: young, serif;
+    font-size: 2rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition-value p {
+    font-family: young, serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.table {
+    width: 18rem;
+    font-family: outfit, serif;
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+}
+
+.table p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid hsl(30, 10%, 34%) 1px;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.table p:last-child {
+    border-bottom: none;
+}
+
+.table p span:last-child {
+    font-weight: bolder;
+    color: hsl(332, 51%, 32%);
+}
+
+footer {
+    font-family: young, serif;
+    font-style: italic;
+
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: smaller;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
